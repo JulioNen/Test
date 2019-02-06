@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulaire</title>
+</head>
+<body>
+<h2> Commune</h2> <br/>
+ <form action="rest/commune/createCommune" method="POST">
+ Code  <input type="text" name="CodeCommune"/>
+ <br/><br/>
+ Nom de la Commune <input type="text" name="NomCommune"/>
+ <br/><br/>
+ Code Postale <input type="text" name="CodePostale"/>
+ <br/><br/>
+  <button type="submit" >Ajouter une commune</button>
+ </form>
+ <br/>
+ <form action="rest/commune/retrieveCommune" method="GET">
+ <button type="submit" >Afficher toutes les communes</button>
+ </form>
+ <br/>
+<form action="rest/commune/deleteCommune" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='supprimer la commune'>
+ </form> 
+ <br/>
+<form action="rest/commune/findCommune" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='trouver la commune'>
+</form>
+ <br/>
+ 
+ <!-- maire -->
+ <form action="rest/maire/createMaire" method="POST">
+<h2> Maire</h2>
+<br/>
+ Nom :<input type="text" name="nom"/>
+ <br/><br/>
+ Prénom :<input type="text" name="prenom"/>
+ <br/><br/>
+ Civilité :<input type="text" name="civilite"/>
+ <br/><br/>
+ Date de naissance :<input type="text" name="dateDeNaissance"/>
+ <br/><br/>
+  <button type="submit" style="center">Ajouter un maire</button>
+  <br/>
+ </form>
+  <br/>
+  <form action="rest/maire/retrieveMaire" method="GET">
+ <button type="submit" >Afficher tous les maires</button>
+ </form>
+ <br/>
+<form action="rest/maire/deleteMaire" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='supprimer le Maire'>
+ </form> 
+ <br/>
+<form action="rest/maire/findMaire" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='trouver le Maire'>
+</form>
+ <br/>
+ 
+ <!-- Departements -->
+ <form action="rest/departement/createDepartement" method="POST">
+<h2> Département </h2>
+<br/>
+ Nom département :<input type="text" name="NomDepartement"/>
+ <br/><br/>
+ Code du département :<input type="text" name="CodeDepartement"/>
+ <br/><br/>
+  <button type="submit" >Ajouter un département</button>
+ </form>
+ <br/>
+ <form action="rest/departement/retrieveDepartement" method="GET">
+ <button type="submit" >Afficher tous les départements</button>
+ </form>
+ <br/>
+<form action="rest/departement/deleteDepartement" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='supprimer le departement'>
+ </form> 
+ <br/>
+<form action="rest/departement/findDepartement" method="POST">
+id :
+<input type="number" name="id">
+<input type="submit" value='trouver le departement'>
+</form>
+ <br/>
+</body>
+</html>
